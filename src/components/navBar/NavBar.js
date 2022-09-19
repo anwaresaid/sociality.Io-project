@@ -1,9 +1,9 @@
 import React from 'react';
 import SideBar from './SideBar';
-import {SideBarElements} from './SideBarElements';
+import {SideBarElements} from '../../data/SideBarElements';
 import SideTitle from './SideTitle';
 import SideBarCompany from './SideBarCompany';
-import '../App.css';
+import '../../App.css';
 
 
 function NavBar() {

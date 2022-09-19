@@ -42,13 +42,13 @@ function Feed() {
         {date2}
       </div>
       <div className="cards-container">
-        {Posts.posts_by_date["2021-07-01"].map((post)=>  <Card post={post}/>)}
+        {Posts.posts_by_date["2021-07-01"].map((post)=>  <Card key={post.created_at + post.account.username} post={post}/>)}
       </div>
       <div className="poster-date">
         {date1}
       </div>
       <div className="cards-container">
-        {Posts.posts_by_date["2021-06-17"].map((post)=>  <Card post={post}/>)}
+        {Posts.posts_by_date["2021-06-17"].map((post)=>  <Card key={post.created_at + post.account.username} post={post}/>)}
       </div>
     </div>
   )
